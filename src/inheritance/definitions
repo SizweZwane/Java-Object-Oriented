@@ -1,0 +1,22 @@
+Inheritance -   is the process where one class acquires the properties and behaviors of another class.
+            -   The class which inherits the properties of other is known as subclass and the class
+                whose properties are inherited is known as superclass.
+            -   inheritance represents the IS-A relationship, a.k.a. parent-child relationship
+
+Why use inheritance
+    -   for code reusability.
+    -   for method overriding (to achieve runtime polymorphism).
+    -   the information is made manageable in a hierarchical order.
+
+extends keyword -   is the keyword used to inherit the properties of a class.
+
+super keyword   -   is similar to this keyword but is used to differentiate member of the superclass
+                    from the members of subclass, if they have same names.
+                -   invoke the superclass constructor fromm the subclass.
+
+Types of Inheritance
+
+Single Inheritance -    one class inherits from another
+Multi Level Inheritance -   one class inherits from another and that another class inherits from another.
+Hierarchical Inheritance -  when two or more classes inherit from the same class.
+Multiple Inheritance -  a class inherits from more than one class. Java doesn't support this.

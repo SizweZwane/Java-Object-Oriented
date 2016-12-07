@@ -1,0 +1,8 @@
+Composition -   is restricted form of Aggregation.
+            -   in other words, class A has-a relationship with class B, if code in class A has
+                a reference to an instance of class B.
+            -   composition represents the HAS-A relationship.
+
+Why use Composition
+    -   for code reusability.
+    -   hide visibility to client classes.
