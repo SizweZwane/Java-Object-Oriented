@@ -19,7 +19,7 @@ public class MVC {
             216075600, 216040291, 216028410, 216026633, 216030180, 216012225, 216050084, 216000578,
             216019837, 216050682, 216031484, 216034192, 216001434, 216038581, 216044557, 216013142};
 
-    private static char[] studentGrades = {'A', 'A', 'B', 'C', 'D', 'E', 'F'};
+    private static char[] studentGrades = {'A', 'B', 'C', 'D', 'E', 'F'};
 
     public static void main(String[] args) {
         StudentView view = new StudentView();
@@ -27,9 +27,9 @@ public class MVC {
         StudentPresenter[] presenter = new StudentPresenter[10];
         for (int i = 0; i < presenter.length; i++) {
             presenter[i] = new StudentPresenter(model, view);
-            presenter[i].setStudentName(studentNames[new Random().nextInt(21)]);
-            presenter[i].setStudentNumber(studentNumbers[new Random().nextInt(39)]);
-            presenter[i].setStudentGrade(studentGrades[new Random().nextInt(7)]);
+            presenter[i].setStudentName(studentNames[new Random().nextInt(studentNames.length)]);
+            presenter[i].setStudentNumber(studentNumbers[new Random().nextInt(studentNumbers.length)]);
+            presenter[i].setStudentGrade(studentGrades[new Random().nextInt(studentGrades.length)]);
             presenter[i].updateView();
             System.out.println();
         }
